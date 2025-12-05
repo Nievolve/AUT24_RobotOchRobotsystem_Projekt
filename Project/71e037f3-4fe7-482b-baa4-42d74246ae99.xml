@@ -1,0 +1,216 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:i4Robot350L_180 id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Adept.Robots.Types.Scara/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>1910519795</_a>
+<_b>20455</_b>
+<_c>18475</_c>
+<_d>186</_d>
+<_e>164</_e>
+<_f>66</_f>
+<_g>215</_g>
+<_h>66</_h>
+<_i>70</_i>
+<_j>174</_j>
+<_k>153</_k>
+</Identifier>
+<Offset href="#ref-4"/>
+<Parent href="#ref-5"/>
+<Visible>true</Visible>
+<RobotNumber>1</RobotNumber>
+<Controller href="#ref-6"/>
+<Joints href="#ref-7"/>
+<OptionBits>0</OptionBits>
+<ControlConfig>3</ControlConfig>
+<SecurityId id="ref-8"></SecurityId>
+<CachedEndEffectorName id="ref-9">IO EndEffector0</CachedEndEffectorName>
+<TId xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>-273650494</_a>
+<_b>-24899</_b>
+<_c>16755</_c>
+<_d>172</_d>
+<_e>190</_e>
+<_f>145</_f>
+<_g>90</_g>
+<_h>15</_h>
+<_i>158</_i>
+<_j>197</_j>
+<_k>87</_k>
+</TId>
+<EName id="ref-10">R1 i4-350L (180 mm)</EName>
+<SelectedEndEffector href="#ref-11"/>
+<CollisionNotificationProgram href="#ref-12"/>
+<InnerLinkLength>175</InnerLinkLength>
+<OuterLinkLength>175</OuterLinkLength>
+<ToolFlangeOffset>242.5</ToolFlangeOffset>
+</a1:i4Robot350L_180>
+<a3:Transform3D id="ref-4" xmlns:a3="http://schemas.microsoft.com/clr/nsassem/Ace.Server/Ace.Core">
+<Offset xsi:type="a3:Vector3D" xmlns:a3="http://schemas.microsoft.com/clr/nsassem/Ace.Server/Ace.Core">
+<X>0</X>
+<Y>0</Y>
+<Z>0</Z>
+</Offset>
+<XAxis xsi:type="a3:Vector3D" xmlns:a3="http://schemas.microsoft.com/clr/nsassem/Ace.Server/Ace.Core">
+<X>1</X>
+<Y>0</Y>
+<Z>0</Z>
+</XAxis>
+<YAxis xsi:type="a3:Vector3D" xmlns:a3="http://schemas.microsoft.com/clr/nsassem/Ace.Server/Ace.Core">
+<X>0</X>
+<Y>1</Y>
+<Z>0</Z>
+</YAxis>
+</a3:Transform3D>
+<a4:LinkedReference id="ref-5" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Core.References/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>0</_a>
+<_b>0</_b>
+<_c>0</_c>
+<_d>0</_d>
+<_e>0</_e>
+<_f>0</_f>
+<_g>0</_g>
+<_h>0</_h>
+<_i>0</_i>
+<_j>0</_j>
+<_k>0</_k>
+</Identifier>
+<CachedName href="#ref-8"/>
+</a4:LinkedReference>
+<a4:LinkedReference id="ref-6" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Core.References/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>-1494446578</_a>
+<_b>-25669</_b>
+<_c>17092</_c>
+<_d>184</_d>
+<_e>93</_e>
+<_f>151</_f>
+<_g>219</_g>
+<_h>124</_h>
+<_i>127</_i>
+<_j>45</_j>
+<_k>145</_k>
+</Identifier>
+<CachedName id="ref-13">/i4-350L_0/Controller Settings</CachedName>
+</a4:LinkedReference>
+<SOAP-ENC:Array id="ref-7" SOAP-ENC:arrayType="a5:Joint[5]" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Adept.Robots.Joints/Ace">
+<item href="#ref-14"/>
+<item href="#ref-15"/>
+<item href="#ref-16"/>
+<item href="#ref-17"/>
+<item href="#ref-18"/>
+</SOAP-ENC:Array>
+<a4:LinkedReference id="ref-11" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Core.References/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>-1251838216</_a>
+<_b>20494</_b>
+<_c>18744</_c>
+<_d>129</_d>
+<_e>178</_e>
+<_f>206</_f>
+<_g>174</_g>
+<_h>225</_h>
+<_i>32</_i>
+<_j>144</_j>
+<_k>4</_k>
+</Identifier>
+<CachedName id="ref-19">/i4-350L_0/R1 i4-350L (180 mm)/IO EndEffector0</CachedName>
+</a4:LinkedReference>
+<a4:LinkedReference id="ref-12" xmlns:a4="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Core.References/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>0</_a>
+<_b>0</_b>
+<_c>0</_c>
+<_d>0</_d>
+<_e>0</_e>
+<_f>0</_f>
+<_g>0</_g>
+<_h>0</_h>
+<_i>0</_i>
+<_j>0</_j>
+<_k>0</_k>
+</Identifier>
+<CachedName href="#ref-8"/>
+</a4:LinkedReference>
+<a5:Joint id="ref-14" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Adept.Robots.Joints/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>1831034370</_a>
+<_b>-17190</_b>
+<_c>18968</_c>
+<_d>128</_d>
+<_e>245</_e>
+<_f>119</_f>
+<_g>176</_g>
+<_h>38</_h>
+<_i>37</_i>
+<_j>212</_j>
+<_k>110</_k>
+</Identifier>
+<Name id="ref-20">Shoulder</Name>
+</a5:Joint>
+<a5:Joint id="ref-15" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Adept.Robots.Joints/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>-903698666</_a>
+<_b>-13990</_b>
+<_c>19469</_c>
+<_d>164</_d>
+<_e>200</_e>
+<_f>61</_f>
+<_g>48</_g>
+<_h>183</_h>
+<_i>195</_i>
+<_j>111</_j>
+<_k>114</_k>
+</Identifier>
+<Name id="ref-21">Elbow</Name>
+</a5:Joint>
+<a5:Joint id="ref-16" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Adept.Robots.Joints/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>1139033152</_a>
+<_b>-18344</_b>
+<_c>17229</_c>
+<_d>148</_d>
+<_e>12</_e>
+<_f>212</_f>
+<_g>159</_g>
+<_h>176</_h>
+<_i>140</_i>
+<_j>91</_j>
+<_k>154</_k>
+</Identifier>
+<Name id="ref-22">Z</Name>
+</a5:Joint>
+<a5:Joint id="ref-17" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Adept.Robots.Joints/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>962006553</_a>
+<_b>22158</_b>
+<_c>19246</_c>
+<_d>165</_d>
+<_e>103</_e>
+<_f>231</_f>
+<_g>182</_g>
+<_h>150</_h>
+<_i>190</_i>
+<_j>38</_j>
+<_k>70</_k>
+</Identifier>
+<Name id="ref-23">Wrist</Name>
+</a5:Joint>
+<a5:Joint id="ref-18" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/Ace.Server.Adept.Robots.Joints/Ace">
+<Identifier xsi:type="a2:Guid" xmlns:a2="http://schemas.microsoft.com/clr/ns/System">
+<_a>1337465234</_a>
+<_b>11836</_b>
+<_c>19508</_c>
+<_d>143</_d>
+<_e>150</_e>
+<_f>205</_f>
+<_g>3</_g>
+<_h>195</_h>
+<_i>220</_i>
+<_j>124</_j>
+<_k>123</_k>
+</Identifier>
+<Name id="ref-24">Tool</Name>
+</a5:Joint>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

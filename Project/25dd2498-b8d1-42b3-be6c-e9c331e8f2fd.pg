@@ -1,0 +1,10 @@
+﻿.PROGRAM gripper(cmd)
+;
+        IF cmd THEN ; öppnar 
+            SIGNAL -19, 20
+        ELSE  ; stänger
+            SIGNAL -20, 19
+        END
+
+.END
+

@@ -1,0 +1,91 @@
+﻿.PROGRAM main()
+        CALL init() ; Tar in startvärden
+
+; Locations till pickframe
+        SET frame1[0] = TRANS(39.252,279.681,32.01,0,180,-0.013)  ;Location 1 och 4
+        SET frame1[1] = TRANS(39.252,229.681,32.005,0,180,-0.013)  ;Location 2
+        SET frame1[2] = TRANS(-60.748,279.681,32.01,0,180,-0.013) ;Location 3
+; Skapar pickframe
+        SET pickframe = FRAME(frame1[0],frame1[1],frame1[2],frame1[0])
+
+; Locations till placeframe
+        SET frame2[0] = TRANS(13.745,-189.407,32,0,180,-89.84) ;Location 1 och 4
+        SET frame2[1] = TRANS(13.745,-239.407,32,0,180,-89.84) ;Location 2
+        SET frame2[2] = TRANS(-86.255,-18.407,32,0,180,-89.84) ;LOcation 3
+; Skapar placeframe
+        SET placeframe = FRAME(frame2[0],frame2[1],frame2[2],frame2[0])
+
+        SET home = SHIFT(frame1[0] BY -50,-25,100) ; Home ska placeras i mitten av pickframen
+
+
+
+        SPEED 25 ALWAYS
+        MOVE home
+        BREAK
+
+; Loop
+        WHILE arbete DO
+
+
+            SET pick = pickframe:TRANS(x*x_avs,y*y_avs) ; Förskjutning från pickframe (origin)
+            SET place = placeframe:TRANS(x*x_avs,y*y_avs) ; Förskjutning från placeframe (origin)
+
+
+; Pick
+
+            RIGHTY ; För att nå på sin vänstra sida
+            BREAK
+
+            APPRO pick, 30
+            SPEED 25 ALWAYS
+            CALL gripper(open)
+            MOVE pick
+            BREAK
+            WAIT.EVENT 0.2
+            CALL gripper(close)
+            DEPART 30
+
+;Labyrint Pick-Place
+            SPEED 80 ALWAYS
+            FOR i = 0 TO 13
+                MOVES loc[i]
+            END
+
+
+; Place
+
+            LEFTY ; För att nå sin höger sida
+            BREAK
+
+            APPRO place, 30
+            SPEED 25 ALWAYS
+            MOVE place
+            BREAK
+            WAIT.EVENT 0.2
+            CALL gripper(open)
+            DEPART 30
+
+; Labyrint Place-Pick
+            SPEED 80 ALWAYS
+            FOR i = 13 TO 0 STEP -1
+                MOVES loc[i]
+            END
+; Uppräknare för förskjutning i X och Y axel för pick/place-frame
+            x = x+1
+            IF x > x_grid THEN
+                x = 0
+                y = y+1
+            END
+            IF y > y_grid THEN
+                y = 0
+                arbete = FALSE ;klar
+                TYPE "Arbetet klart"
+                SPEED 25 ALWAYS
+                MOVE home
+            END
+        END
+
+    ; Slut loop
+
+.END
+

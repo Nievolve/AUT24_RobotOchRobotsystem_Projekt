@@ -1,0 +1,25 @@
+﻿.PROGRAM init()
+
+; Konstanter
+        ATTACH ()
+        SPEED 20 MONITOR
+        SET gripper = TRANS(0,0,110) ;Offset tool, gripper
+        TOOL gripper
+        y_avs = 25 ; korta sidan
+        x_avs = 25 ; långa sidan
+        x_grid = 2 ;3x5
+        y_grid = 4
+        open = TRUE
+        close = FALSE
+
+; Variabler
+        x = 0
+        y = 0
+        arbete = TRUE
+
+
+
+
+
+.END
+
