@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Manifest manifestSchemaVersion="1" modelSchemaVersion="1">
-  <Application applicationName="sysmac" applicationVersion="0" />
+  <Application applicationName="sysmac" applicationVersion="Infinity" />
   <Solution solutionName="Projekt_Safe" id="c383bc3e-21c2-4121-b3a8-cda9583ba3cb" trackingId="9977580d-f890-4c03-88cd-77db4f48d05b" solutionSchemaVersion="2">
     <ApplicationFeatures>
       <ApplicationFeature name="Ace.Controller" />
